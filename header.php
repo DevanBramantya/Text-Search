@@ -166,7 +166,7 @@
                     $string_cek=preg_replace("/[^A-Za-z0-9 ]/", '', $string_cek);
                     //variabel untuk keyword yang sedang di periksa
                     $keyword_cek=join($keyword[$j]);
-                    //kondisi untuk mengecek karakter selanjutnya adalah bukan alphabet dan kondisi untuk mengecek karakter sebelumnya adalah bukan karakter
+                    //kondisi untuk mengecek karakter selanjutnya adalah bukan alphabet dan kondisi untuk mengecek karakter sebelumnya adalah bukan alphabet
                     if(!ctype_alpha($isi[$i+1]) && strpos($string_cek,$keyword_cek) === 0){
                         //menampilkan nama file
                         echo "<a href='artikel.php?artikel=$kode'>".$nama_file."</a>";
